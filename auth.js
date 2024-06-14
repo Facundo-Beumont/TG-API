@@ -19,7 +19,7 @@ class Authentication {
         passport.use(new GoogleStrategy({
             clientID: GOOGLE_CLIENT_ID,
             clientSecret: GOOGLE_CLIENT_SECRET,
-            callbackURL: "https://tg-api-cl2f.onrender.com",
+            callbackURL: "https://tg-api-cl2f.onrender.com/auth/google/callback",
             passReqToCallback: true
         }, this.verifyIdentity));
 
